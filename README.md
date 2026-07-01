@@ -41,7 +41,7 @@ Note: riMESA is the culmination of a line of work containing a batch optimizer [
 Extensive evaluation on real and synthetic data demonstrates that riMESA is able to provide accurate results across problem scenarios. The code used to generate all results is also made available in the companion repository [COMING SOON](https://github.com/rpl-cmu/rimesa).
 
 
-Below are example qualitative results from trials from the [COSMO-Bench](cosmobench.com) benchmark for collaborative SLAM.
+Below are example qualitative results from trials from the [COSMO-Bench](https://cosmobench.com) benchmark for collaborative SLAM.
 
 <p align="center">
 <img src="media/example_results/wifi/kth_r3_00_wifi_compressed.gif" alt="KTH R3 00" width="19%"/>
