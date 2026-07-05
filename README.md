@@ -38,7 +38,7 @@ Note: riMESA is the culmination of a line of work containing a batch optimizer [
 
 ## Example Results
 
-Extensive evaluation on real and synthetic data demonstrates that riMESA is able to provide accurate results across problem scenarios. The code used to generate all results is also made available in the companion repository [COMING SOON](https://github.com/rpl-cmu/rimesa).
+Extensive evaluation on real and synthetic data demonstrates that riMESA is able to provide accurate results across problem scenarios. The code used to generate all results is also made available in the companion repository [rimesa Experiments](https://github.com/rpl-cmu/rimesa-experiments).
 
 
 Below are example qualitative results from trials from the [COSMO-Bench](https://cosmobench.com) benchmark for collaborative SLAM.
@@ -69,7 +69,7 @@ In the associated publication we present results from over 2400 simulated trials
 ## Documentation
 We provide the implementation of riMESA as a simple C++ library. This library is quite similar to the prior work iMESA for experienced users. The library provides a class `RIMESA` that can be used on-board each robot in a multi-robot team to solve their collaborative state estimate using the riMESA algorithm. Practically, this class is used much like existing incremental SLAM solvers like `ISAM2` as provided by `gtsam`, with extensions to perform communications with other robots in parallel threads (using the `CommunicationHandler`) and incorporate information from these communications to improve local estimates.
 
-See `include/rimesa/rimesa.h` for inline documentation on this class's interface. Additionally, see our [experiments repository (COMINE SOON)](https://github.com/rpl-cmu/rimesa) for an example of how this library can be used. The best place for documentation on the algorithm itself is the paper discussed above!
+See `include/rimesa/rimesa.h` for inline documentation on this class's interface. Additionally, see our [experiments repository](https://github.com/rpl-cmu/rimesa-experiments) for an example of how this library can be used. The best place for documentation on the algorithm itself is the paper discussed above!
 
 
 ### Variable Conventions
@@ -100,7 +100,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(rimesa)
 ```
 
-The project in which riMESA is used will need to be build against the GTSAM version discussed above. An example of this in practice can be found in the [experiments repository (COMING SOON)](https://github.com/rpl-cmu/rimesa).
+The project in which riMESA is used will need to be build against the GTSAM version discussed above. An example of this in practice can be found in the [experiments repository](https://github.com/rpl-cmu/rimesa-experiments).
 
 # Issues
 If you encounter issues with this library please fill out a bug report on github with details on how to reproduce the error!
